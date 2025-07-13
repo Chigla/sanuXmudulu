@@ -62,12 +62,14 @@
       text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
     }
     .hero img {
-      width: 80%;
-      max-width: 300px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
+  width: 90%;             /* fills most of the screen */
+  max-width: 400px;       /* caps the width */
+  aspect-ratio: 4/3;      /* makes it a bit “long” without distortion */
+  height: auto;           
+  border-radius: 1rem;    /* 16px rounded corners */
+  border: 4px solid #fff; /* keeps that white frame */
+}
+
 
     /* FOOTER */
     footer {
