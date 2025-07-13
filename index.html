@@ -95,25 +95,7 @@
       background: #fff0f2;
       color: #aaa;
     }
-    /* make sure your container sits behind all content */
-.heart-container {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  pointer-events: none;    /* clicks pass through */
-  overflow: hidden;
-  z-index: 0;              /* behind your hero section (which is z-index: auto) */
-}
-
-/* each heart */
-.heart {
-  position: absolute;
-  font-size: var(--size);
-  color: var(--color);
-  opacity: 0.7;
-  transform: translate(-50%, -50%);
-}
-
+    
   </style>
 </head>
 <body>
@@ -128,7 +110,7 @@
       <li><a href="about.html">About</a></li>
     </ul>
   </nav>
-  <div class="heart-container"></div>
+
 
   <!-- HERO SECTION -->
   <section class="hero">
@@ -142,34 +124,6 @@
     © Chigla Industries
   </footer>
 
-
-  <script>
-  const colors = ['#ff3e6c','#ff6f91','#ff9a9e','#ffcee4','#ffd1dc'];
-  const container = document.querySelector('.heart-container');
-  const count = 30;  // how many hearts
-
-  for (let i = 0; i < count; i++) {
-    const heart = document.createElement('div');
-    heart.classList.add('heart');
-    heart.textContent = '❤️';
-    
-    // random size between 10px and 30px
-    const size = Math.random() * 20 + 10;
-    heart.style.setProperty('--size', `${size}px`);
-    
-    // pick a random pink/red shade
-    const color = colors[Math.floor(Math.random() * colors.length)];
-    heart.style.setProperty('--color', color);
-    
-    // random position in the viewport
-    const x = Math.random() * 100;
-    const y = Math.random() * 100;
-    heart.style.left = x + 'vw';
-    heart.style.top  = y + 'vh';
-    
-    container.appendChild(heart);
-  }
-</script>
 
 </body>
 </html>
