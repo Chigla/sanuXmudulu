@@ -7,11 +7,19 @@
   <!-- Cute romantic fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    /* THEME VARIABLES */
+    :root {
+      --accent:   #f50057;  /* bright pink */
+      --muted:    #ff80ab;  /* softer pink for hovers/active */
+      --bg-light: #ffe6eb;
+      --bg-footer:#fff0f2;
+    }
+
     /* RESET & BASE */
     * { margin:0; padding:0; box-sizing:border-box; }
     body {
       font-family: 'Montserrat', sans-serif;
-      background: #ffe6eb;
+      background: var(--bg-light);
       color: #333;
       display: flex; flex-direction: column;
       min-height: 100vh;
@@ -32,25 +40,21 @@
       justify-content: space-around;
       list-style: none;
     }
-    nav li {
-      flex: 1;
-    }
+    nav li { flex: 1; }
     nav a {
       display: block;
       padding: 0.75rem 0;
       text-align: center;
       font-weight: 600;
       font-size: 0.95rem;
-      color: #c2185b;
+      color: var(--accent);
       transition: color .2s, border-color .2s;
       border-bottom: 3px solid transparent;
     }
-    nav a:hover {
-      color: #e91e63;
-    }
+    nav a:hover { color: var(--muted); }
     nav a.active {
-      color: #e91e63;
-      border-color: #e91e63;
+      color: var(--muted);
+      border-color: var(--muted);
     }
 
     /* HERO */
@@ -68,7 +72,7 @@
     .hero h1 {
       font-family: 'Dancing Script', cursive;
       font-size: 2.5rem;
-      color: #880e4f;
+      color: var(--accent);
       margin-bottom: 1rem;
       text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
     }
@@ -83,7 +87,7 @@
     .hero .love {
       font-family: 'Dancing Script', cursive;
       font-size: 1.5rem;
-      color: #880e4f;
+      color: var(--accent);
       margin-top: 1rem;
     }
 
@@ -92,10 +96,9 @@
       text-align: center;
       padding: 1rem 0;
       font-size: 0.85rem;
-      background: #fff0f2;
-      color: #aaa;
+      background: var(--bg-footer);
+      color: var(--accent);
     }
-    
   </style>
 </head>
 <body>
@@ -111,7 +114,6 @@
     </ul>
   </nav>
 
-
   <!-- HERO SECTION -->
   <section class="hero">
     <h1>Happy 3 Year Anniversary Baby 🎉</h1>
@@ -123,7 +125,6 @@
   <footer>
     © Chigla Industries
   </footer>
-
 
 </body>
 </html>
