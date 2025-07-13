@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Journey</title>
+  <!-- Cute romantic fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent:   #f50057;
+      --muted:    #ff80ab;
+      --bg-light: #ffe6eb;
+      --bg-footer:#fff0f2;
+    }
+    /* RESET & BASE */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--bg-light);
+      color: #333;
+      display: flex; flex-direction: column;
+      min-height: 100vh;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; width: 100%;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(5px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+    nav ul {
+      display: flex; justify-content: space-around; list-style: none;
+    }
+    nav li { flex: 1; }
+    nav a {
+      display: block;
+      padding: 0.75rem 0;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--accent);
+      transition: color .2s, border-color .2s;
+      border-bottom: 3px solid transparent;
+    }
+    nav a:hover { color: var(--muted); }
+    nav a.active {
+      color: var(--muted);
+      border-color: var(--muted);
+    }
+
+    /* CONTENT */
+    .content {
+      flex: 1;
+      padding: 5rem 1.5rem 2rem; /* clear fixed nav */
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    .section h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+      text-align: center;
+    }
+    .section p {
+      margin-bottom: 0.5rem;
+      padding: 0 0.5rem;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.85rem;
+      background: var(--bg-footer);
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV BAR -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="journey.html" class="active">Our Journey</a></li>
+      <li><a href="poems.html">Poems</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- JOURNEY CONTENT -->
+  <section class="content">
+    <div id="year1" class="section">
+      <h2>Year 1</h2>
+      <p>– [Your first date, memories, milestones…]</p>
+      <p>– [Add more bullet points or descriptions]</p>
+    </div>
+
+    <div id="year2" class="section">
+      <h2>Year 2</h2>
+      <p>– [Trips, fun moments, challenges…]</p>
+      <p>– [More highlights here]</p>
+    </div>
+
+    <div id="year3" class="section">
+      <h2>Year 3</h2>
+      <p>– [Recent adventures, best memories…]</p>
+      <p>– [Add any special notes]</p>
+    </div>
+
+    <div id="upcoming" class="section">
+      <h2>Upcoming Plans</h2>
+      <p>– [Bla bla blaa…]</p>
+    </div>
+
+    <div id="future" class="section">
+      <h2>Future Plan</h2>
+      <p>– [Your dreams and goals together…]</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © Chigla Industries
+  </footer>
+
+</body>
+</html>
