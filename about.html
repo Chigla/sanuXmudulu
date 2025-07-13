@@ -58,7 +58,7 @@
     /* CONTENT */
     .content {
       flex: 1;
-      padding: 5rem 1.5rem 2rem; /* top padding to clear fixed nav */
+      padding: 5rem 1.5rem 2rem; /* clears fixed nav */
       max-width: 600px;
       margin: 0 auto;
       line-height: 1.6;
@@ -93,6 +93,42 @@
       font-size: 0.85rem;
       background: var(--bg-footer);
       color: var(--accent);
+    }
+
+    /* RESPONSIVE: Small phones up to ~480px */
+    @media (max-width: 480px) {
+      nav a {
+        font-size: 0.85rem;
+        padding: 0.5rem 0;
+      }
+      .content {
+        padding: 4rem 1rem 1.5rem;
+      }
+      .content h2 {
+        font-size: 1.75rem;
+      }
+      .content blockquote {
+        font-size: 1.1rem;
+      }
+      .content .heart {
+        font-size: 1.3rem;
+      }
+    }
+
+    /* RESPONSIVE: Very small phones up to ~320px */
+    @media (max-width: 320px) {
+      nav a {
+        font-size: 0.8rem;
+      }
+      .content h2 {
+        font-size: 1.5rem;
+      }
+      .content blockquote {
+        font-size: 1rem;
+      }
+      .content .heart {
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
