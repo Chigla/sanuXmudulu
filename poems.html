@@ -69,25 +69,30 @@
       font-weight: 600;
     }
     .buttons {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-      margin-bottom: 1rem;
-    }
-    .buttons button {
-      background: var(--accent);
-      color: #fff;
-      border: none;
-      padding: 1rem;
-      border-radius: 0.5rem;
-      font-weight: 600;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background .2s;
-    }
-    .buttons button:hover {
-      background: var(--muted);
-    }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 400px;      /* keeps it from stretching too wide */
+  margin: 0 auto 1rem;   /* center + bottom spacing */
+}
+
+.buttons button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 1rem;         /* comfortable tap area */
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background .2s;
+  width: 100%;           /* fill its grid cell */
+}
+
+.buttons button:hover {
+  background: var(--muted);
+}
+
     hr.divider {
       border: none;
       border-top: 1px solid #ddd;
