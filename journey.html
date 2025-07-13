@@ -34,7 +34,9 @@
       z-index: 10;
     }
     nav ul {
-      display: flex; justify-content: space-around; list-style: none;
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
     }
     nav li { flex: 1; }
     nav a {
@@ -53,15 +55,6 @@
       border-color: var(--muted);
     }
 
-    .ul img {
-      width: 100%;
-      max-width: 500px;
-      margin: 1rem auto;
-      display: block;
-      border-radius: 0.5rem;
-      border: 4px solid #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
     /* CONTENT */
     .content {
       flex: 1;
@@ -81,12 +74,27 @@
       text-align: center;
     }
     .section p {
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
       padding: 0 0.5rem;
     }
     .section ul {
-      margin-bottom: 0.5rem;
-      padding: 0 0.5rem;
+      padding: 0 1rem;
+      list-style: disc;
+      margin-bottom: 1rem;
+    }
+    .section li {
+      margin-bottom: 0.75rem;
+    }
+    .section figure {
+      margin: 1rem 0;
+      text-align: center;
+    }
+    .section figure img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 0.5rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     /* FOOTER */
@@ -114,24 +122,30 @@
 
   <!-- JOURNEY CONTENT -->
   <section class="content">
+
     <div id="year1" class="section">
       <h2>Year 1</h2>
-      <p>It all started wen I joined the discord server, "Circle Outsiders" searching for some friends. How would I have guessed the girl using a matching profile picture with her then boyfriend was going to end up falling for me.</p>
+      <p>It all started when I joined the Discord server “Circle Outsiders” searching for some friends. How would I have guessed the girl using a matching profile picture with her then-boyfriend was going to end up falling for me.</p>
       <ul>
-        <li>1st date: We met around Grandee Hospital 🏥 and held hands and walked. Both of us were really shy but we yapped a lot and it was a lot of fun. I got a matching bracelette for the two of us too.</li><br>
-        <li>2nd date: We met around the same spot but went to Bhutkhel park and sat there besdies a hut. We had our FIRST KISS 💋 on this day and it twas very cute. I had returned from India tour recently and had brought necklace and jhumka for you which suit you a lot.</li><br>
-        <li>3rd date: We met at Swayambhu and I jump scared you so you slapped me haha. We then went to a cafe and had tea and then had a long walk to find a park to do some nasty things 👅 hehe.</li><br>
-        <img src="images/3rd.jpg">
-        <li>4th date: We went to BG mall and had so much fun. It was our first time at the movies and we breaked our kiss record (almost 5 minutes) and even tried new things ykyk. 🍆</li>
-        <img src="images/4th.jpg">
+        <li><strong>1st date:</strong> We met around Grandee Hospital 🏥, held hands, and walked. Both of us were really shy but chatted nonstop—and I got matching bracelets for us.</li>
+        <li><strong>2nd date:</strong> We returned to the same spot but then went to Bhutkhel Park. We shared our <em>first kiss</em> 💋, and I surprised you with a necklace and jhumka from my India trip.</li>
+        <li><strong>3rd date:</strong> At Swayambhu I jump-scared you and got slapped—haha! Then we grabbed tea at a café and took a long walk to a park for some …naughty fun👅.</li>
       </ul>
-    
+      <figure>
+        <img src="images/3rd.jpg" alt="Third date at Swayambhu">
+      </figure>
+      <ul>
+        <li><strong>4th date:</strong> We hit the BG Mall for our first movie together, broke our kiss record (almost 5 minutes!), and got adventurous 🍆.</li>
+      </ul>
+      <figure>
+        <img src="images/4th.jpg" alt="Fourth date at BG Mall">
+      </figure>
     </div>
 
     <div id="year2" class="section">
       <h2>Year 2</h2>
-      <p>This year was more of a "roller coaster". With numerous ups and downs, fights and quarrels and, kisses and blowjobs, this year was one of its kind. 💖</p>
-      <p>I don't remember specific dates here but we went on some really great ones. I think this was the year when we discovered Netflix and Chill too haha. And another major event was that we nearly broke up this year but thank god we didn't. Whatever hardships we went through then surely made us stronger. 💗</p>
+      <p>This year was a true “roller coaster.” With ups and downs, fights and quarrels, kisses and blowjobs—this one stood out. 💖</p>
+      <p>We discovered Netflix and chill, and even nearly broke up—but thankfully didn’t. Those hardships made us stronger. 💗</p>
     </div>
 
     <div id="year3" class="section">
@@ -142,13 +156,14 @@
 
     <div id="upcoming" class="section">
       <h2>Upcoming Plans</h2>
-      <p>– [Bla bla blaa…]</p>
+      <p>– [Bla bla bla…]</p>
     </div>
 
     <div id="future" class="section">
       <h2>Future Plan</h2>
       <p>– [Your dreams and goals together…]</p>
     </div>
+
   </section>
 
   <!-- FOOTER -->
