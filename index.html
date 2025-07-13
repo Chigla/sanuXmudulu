@@ -99,6 +99,39 @@
       background: var(--bg-footer);
       color: var(--accent);
     }
+
+    /* RESPONSIVE: Small phones up to ~480px */
+    @media (max-width: 480px) {
+      nav a {
+        font-size: 0.85rem;
+        padding: 0.5rem 0;
+      }
+      .hero {
+        padding: 2.5rem 0.5rem 1.5rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero img {
+        max-width: 300px;
+      }
+      .hero .love {
+        font-size: 1.25rem;
+      }
+    }
+
+    /* RESPONSIVE: Very small phones up to ~320px */
+    @media (max-width: 320px) {
+      nav a {
+        font-size: 0.8rem;
+      }
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+      .hero .love {
+        font-size: 1.1rem;
+      }
+    }
   </style>
 </head>
 <body>
