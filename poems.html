@@ -65,27 +65,34 @@
     .intro {
       text-align: center;
       margin-bottom: 2rem;
-      font-size: 1.1rem;
+      font-size: 1.5rem;       /* increased font size */
+      font-weight: 600;
     }
     .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.75rem;
-      margin-bottom: 3rem;
+      display: grid;           /* 2x2 grid */
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      justify-items: stretch;
+      margin-bottom: 1rem;
     }
     .buttons button {
       background: var(--accent);
       color: #fff;
       border: none;
-      padding: 0.5rem 1rem;
+      padding: 1rem;           /* larger buttons */
       border-radius: 0.5rem;
       font-weight: 600;
+      font-size: 1rem;
       cursor: pointer;
       transition: background .2s;
     }
     .buttons button:hover {
       background: var(--muted);
+    }
+    hr.divider {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 1.5rem 0;
     }
     .poem {
       margin-bottom: 4rem;
@@ -100,6 +107,14 @@
     .poem p {
       margin-bottom: 0.75rem;
       line-height: 1.6;
+    }
+    .poem img {
+      width: 100%;
+      max-width: 500px;
+      margin: 1rem auto;
+      display: block;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     /* FOOTER */
@@ -117,7 +132,7 @@
   <!-- NAV BAR -->
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
+      <li><a href="home.html">Home</a></li>
       <li><a href="journey.html">Our Journey</a></li>
       <li><a href="poems.html" class="active">Poems</a></li>
       <li><a href="gallery.html">Gallery</a></li>
@@ -134,12 +149,15 @@
       <button onclick="document.getElementById('ek-tarfe').scrollIntoView({ behavior: 'smooth' })">Ek tarfe</button>
       <button onclick="document.getElementById('bas-timi').scrollIntoView({ behavior: 'smooth' })">Bas timi magideu</button>
     </div>
+    <hr class="divider">
 
     <div id="timro" class="poem">
       <h3>Timro</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <p>Vivamus lacinia odio vitae vestibulum vestibulum.</p>
       <p>Cras placerat, sapien sit amet hendrerit sodales, urna erat.</p>
+      <img src="images/placeholder-poem1.jpg" alt="Timro image placeholder">
+      <hr class="divider">
     </div>
 
     <div id="her" class="poem">
@@ -147,6 +165,8 @@
       <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
       <p>Curabitur blandit tempus porttitor.</p>
       <p>Sed posuere consectetur est at lobortis.</p>
+      <img src="images/placeholder-poem2.jpg" alt="Her image placeholder">
+      <hr class="divider">
     </div>
 
     <div id="ek-tarfe" class="poem">
@@ -154,6 +174,8 @@
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
       <p>Donec ullamcorper nulla non metus auctor fringilla.</p>
       <p>Aenean lacinia bibendum nulla sed consectetur.</p>
+      <img src="images/placeholder-poem3.jpg" alt="Ek tarfe image placeholder">
+      <hr class="divider">
     </div>
 
     <div id="bas-timi" class="poem">
@@ -161,6 +183,8 @@
       <p>Etiam porta sem malesuada magna mollis euismod.</p>
       <p>Maecenas faucibus mollis interdum.</p>
       <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+      <img src="images/placeholder-poem4.jpg" alt="Bas timi magideu image placeholder">
+      <hr class="divider">
     </div>
   </section>
 
