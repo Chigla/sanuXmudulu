@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy 3rd Anniversary</title>
+  <!-- Cute romantic font -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* RESET & BASE */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #ffe6eb;
+      color: #333;
+      display: flex; flex-direction: column;
+      min-height: 100vh;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; width: 100%;
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(5px);
+      display: flex;
+      justify-content: center;
+      padding: 0.75rem 1rem;
+      z-index: 10;
+    }
+    nav ul {
+      display: flex; gap: 1rem;
+      list-style: none;
+    }
+    nav a {
+      font-weight: 600;
+      color: #c2185b;
+      transition: color .2s;
+    }
+    nav a:hover {
+      color: #e91e63;
+    }
+
+    /* HERO */
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 5rem 1rem 2rem;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      min-height: 100vh;
+    }
+    .hero h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5rem;
+      color: #880e4f;
+      margin-bottom: 1.5rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+    }
+    .hero img {
+      width: 80%;
+      max-width: 300px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.85rem;
+      background: #fff0f2;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV BAR -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#journey">Our Journey</a></li>
+      <li><a href="#poems">Poems</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Happy 3 Year Anniversary Baby❤️</h1>
+    <!-- replace placeholder.jpg with your actual image -->
+    <img src="placeholder.jpg" alt="Us together">
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © Chigla Industries
+  </footer>
+
+</body>
+</html>
 
