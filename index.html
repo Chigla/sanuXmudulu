@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Happy 3rd Anniversary</title>
-  <!-- Cute romantic font -->
+  <!-- Cute romantic fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     /* RESET & BASE */
@@ -22,7 +22,7 @@
     nav {
       position: fixed;
       top: 0; left: 0; width: 100%;
-      background: rgba(255,255,255,0.7);
+      background: rgba(255,255,255,0.8);
       backdrop-filter: blur(5px);
       display: flex;
       justify-content: center;
@@ -50,7 +50,8 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 5rem 1rem 2rem;
+      /* reduced top padding to bring h1 closer to nav */
+      padding: 3rem 1rem 2rem;
       background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
       min-height: 100vh;
     }
@@ -58,18 +59,23 @@
       font-family: 'Dancing Script', cursive;
       font-size: 2.5rem;
       color: #880e4f;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
     }
     .hero img {
-  width: 90%;
-  max-width: 400px;
-  height: auto;            /* preserve original aspect ratio */
-  border-radius: 1rem;
-  border: 4px solid #fff;
-}
-
-
+      width: 90%;
+      max-width: 400px;
+      height: auto;            /* preserves original ratio */
+      border-radius: 1rem;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .hero .love {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.5rem;
+      color: #880e4f;
+      margin-top: 1rem;
+    }
 
     /* FOOTER */
     footer {
@@ -87,10 +93,10 @@
   <nav>
     <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#gallery">Gallery</a></li>
       <li><a href="#journey">Our Journey</a></li>
       <li><a href="#poems">Poems</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
     </ul>
   </nav>
 
@@ -98,7 +104,8 @@
   <section class="hero">
     <h1>Happy 3 Year Anniversary Baby❤️</h1>
     <!-- replace placeholder.jpg with your actual image -->
-    <img src="images/genuine.jpg" alt="Us together">
+    <img src="placeholder.jpg" alt="Us together">
+    <p class="love">I LOVE YOU ❤️</p>
   </section>
 
   <!-- FOOTER -->
@@ -108,4 +115,3 @@
 
 </body>
 </html>
-
